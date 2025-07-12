@@ -1,0 +1,176 @@
+
+{
+	"info": {
+		"_postman_id": "3e7def83-6ef8-4fa5-bbaf-ba8413278774",
+		"name": "Food-Hub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28940771"
+	},
+	"item": [
+		{
+			"name": "Create New Resturants",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ashak\",\r\n  \"address\": \"Maidan, Afghanistan\",\r\n  \"phone\": \"0777777700\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/restaurants"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Restaurants",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/restaurants"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Restaurants",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Restaurants 3\",\r\n  \"address\": \"Maidan, Afghanistan\",\r\n  \"phone\": \"0788888888\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/restaurants/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete A Restaurant",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/api/restaurants/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Add menu ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"restaurant_id\": 2,\r\n  \"name\": \"Bolani\",\r\n  \"description\": \"Vegitables\",\r\n  \"price\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/menu-items"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Menu",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/menu-items/restaurant/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Customer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ali\",\r\n  \"phone\": \"0723456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/customers"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All customers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/customers"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/api/customers/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3000/api/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Status",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:3000/api/orders/2/status"
+			},
+			"response": []
+		}
+	]
+}
