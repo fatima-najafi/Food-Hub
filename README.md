@@ -41,7 +41,6 @@ A public food ordering backend system built using **Node.js**, **Express**, and 
 - dotenv
 
 ---
-
 ## 🛠️ Setup & Run the Project
 
 ### 1. Clone the Repository
